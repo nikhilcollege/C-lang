@@ -1,0 +1,75 @@
+{
+	// Place your snippets for c here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	"Bare minimum c program": {
+		"prefix": "a",
+		"body": [
+			"#include <stdio.h>",
+			"#include <conio.h>",
+			"#include <stdlib.h>\n",
+			"int main()",
+			"{",
+			"\t$0",
+			"\treturn 0;",
+			"}"
+		],
+		"description": "It is bare minimum c program which is used to write big programs."
+	},
+	"Printf function": {
+		"prefix": "p",
+		"body": [
+			"printf(\"$0\\n\");"
+		],
+		"description": "It is a function which prints something which is which is written in it."
+	},
+	"Modified Printf function": {
+		"prefix": "p2",
+		"body": [
+			"printf(\"$1%d\\n\", $0);"
+		],
+		"description": "It is a function which prints something which is which is written in it."
+	},
+	"To take input from user": {
+		"prefix": "s",
+		"body": [
+			"scanf(\"%$1\", &$2);",
+		],
+		"description": "It is function which takes input from user."
+	},
+	"Header file": {
+		"prefix": "in",
+		"body": [
+			"#include <stdio.h>",
+			"#include <conio.h>",
+			"#include <stdlib.h>"
+		],
+		"description": "Header file"
+	},
+	"getch function": {
+		"prefix": "g",
+		"body": [
+			"getch();",
+		],
+		"description": "It is a function which holds the screen or stops the program."
+	},
+	"string headerfile": {
+		"prefix": "ins",
+		"body": [
+			"#include <string.h>",
+		],
+		"description": "This will include string functions in our program."
+	},
+	"If function": {
+		"prefix": "if",
+		"body": [
+			"if($1)",
+			"{",
+			"\t$2",
+			"}",
+		],
+		"description": "This is a snippet for if statement."
+	},
+}
