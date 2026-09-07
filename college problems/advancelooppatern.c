@@ -4,12 +4,11 @@
 int main()
 {
     int num;
-    printf("Enter a number : ");
-    // scanf("%d", &num);
-    num = 5;
+    printf("\nEnter the number of rows you want in traingle star pattern : ");
+    scanf("%d", &num);
     printf("\n");
-    int k = ((num * 2) + 1);
-    for (int i = 1; i < (num * 2) + 1; i++)
+    int k = (num + 1);
+    for (int i = 1; i < (num + 1); i++)
     {
         for (int j = 2; j <= k; j++)
         {
@@ -17,7 +16,7 @@ int main()
             {
                 for (int l = 1; l <= i; l++)
                 {
-                    printf("*");
+                    printf("* ");
                 }
                 k--;
             }
@@ -28,6 +27,6 @@ int main()
         }
         printf("\n");
     }
-
+    printf("\n");
     return 0;
 }
